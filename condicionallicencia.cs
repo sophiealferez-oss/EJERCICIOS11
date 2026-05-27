@@ -5,8 +5,7 @@ namespace condicionales
     {
         static void Main(string[] args)
         {
-            double nota;
-
+         
             System.Console.WriteLine("¿Tiene licencia?");
             string rta = Console.ReadLine();
 

@@ -6,15 +6,14 @@ namespace MyApplication
   {
     static void Main(string[] args)
     {
-      int[,] numbers = { {1, 4, 2}, {3, 6, 8} };
-    
-      for (int i = 0; i < numbers.GetLength(0); i++) 
-      {  
-        for (int j = 0; j < numbers.GetLength(1); j++) //esto es para especificar cuántas veces debe ejecutarse el bucle.
-        {  
-          Console.WriteLine(numbers[i, j]);  
-        }  
-      }  
+      for (int i = 0; i < 10; i++) 
+      {
+        if (i == 4) 
+        {
+          continue; //esta instrucción interrumpe una iteración
+        }
+        Console.WriteLine(i);
+      }    
     }
   }
 }
